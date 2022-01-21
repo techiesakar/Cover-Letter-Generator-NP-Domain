@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-lower {
+    text-transform: lowercase;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-right {
+    text-align: right;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 620px;
+    padding: 2.4rem;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.wrapper>* {
+    margin-bottom: 12px;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+label {
+    font-size: 14px;
+    color: #1b8cd3;
+    font-weight: bold;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    color: #444;
+    outline: none;
+}
+
+small {
+    font-size: 12px;
+    color: green;
+}
+
+.btn-wrapper .btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: #1C9CEA;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-wrapper .btn:hover {
+    background-color: #1b8cd3;
+    color: #f1f1f1;
+}
+
+/* Output */
+
+.output {
+    display: none;
+    width: 874px;
+    padding: 4rem;
+    background-color: #f3f0f0e8;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.user-info {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.merchantile-info {
+    margin-bottom: 12px;
+}
+
+.subject {
+    text-align: center;
+    font-weight: bold;
+}
+
+.cover-body p {
+    margin-bottom: 12px;
+}
+
+.download {
+    position: fixed;
+    right: 60px;
+    bottom: 50px;
+    display: none;
+    background-color: #26a141d0;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.download:hover {
+    background-color: #1C9CEA;
+}

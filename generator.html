@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter Generator - Register.com.np</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./assets/html2canvas.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="formWrapper" class="wrapper">
+                <h1 class="page-title">Cover Letter Generator - Register .com.np</h1>
+                <form class="domain-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="domainname">Domain Name</label>
+                        <input type="text" name="dname" class="form-control" required>
+                    </div>
+                    <small>Good for you: We don't keep the record of your data.
+                    </small>
+                </form>
+                <!-- button for toggle   -->
+                <div class="btn-wrapper">
+                    <button id="generate-form" class="btn" type="submit" onclick="toggle()">Generate →</button>
+                </div>
+                <!-- resume preview -->
+            </div>
+            <div id="capture" class="output">
+            </div>
+            <div class="btn">
+          
+                <button id="download" class="download">Download Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script>
+        document.getElementById("download").addEventListener("click", function () {
+            html2canvas(document.getElementById("capture")).then(function (canvas) {
+                var anchorTag = document.createElement("a");
+                document.body.appendChild(anchorTag);
+                anchorTag.download = "coverLetter.jpg";
+                anchorTag.href = canvas.toDataURL();
+                anchorTag.target = '_blank';
+                anchorTag.click();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
