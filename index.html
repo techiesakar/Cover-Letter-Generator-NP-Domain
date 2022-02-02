@@ -64,7 +64,7 @@
             html2canvas(document.getElementById("capture")).then(function (canvas) {
                 var anchorTag = document.createElement("a");
                 document.body.appendChild(anchorTag);
-                anchorTag.download = "coverLetter.jpg";
+                anchorTag.download = "cover_letter.jpeg";
                 anchorTag.href = canvas.toDataURL();
                 anchorTag.target = '_blank';
                 anchorTag.click();
